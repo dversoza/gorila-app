@@ -5,19 +5,16 @@ import './estilo.css';
 const inve_display = () => {
 
     return (<div>
-                <div class="flip">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                        <img src="../../img/img_avatar.png" alt="Avatar" style="width:300px;height:300px;" />
-                        </div>
-
-                        <div class="flip-card-back">
-                            <h1>Thiago Nigro</h1>
-                        </div>
-
-                    </div>
-                </div> 
+                <div class="card">
+                    <img src={require("../../img/img_avatar.png")}  />
+                    <h1>Thiago Nigro</h1>
+                    <p>Acessor ha 19 anos</p>
+                    <p>Especialista em Fundo Multimercado</p>
+                    <p>Diversificador de Carteiras</p>
+                    <p><button>Saiba Mais</button></p>
+                </div>      
             </div>
     )
 };
+
 export default inve_display;
