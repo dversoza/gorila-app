@@ -2,34 +2,42 @@
 .header {
     overflow: hidden;
     background-color:white;
-    padding: 25px 100px;
+    padding: 16px 100px;
     max-height: 150px;
   }
  
   .header a {
-    float: center;
-    color: black;
+    margin: 20px;
+    text-decoration: none;
     text-align: center;
     padding: 12px;
-    text-decoration: none;
     font-size: 20px;
     line-height: 100px;
-    border-radius: 4px;
   }
   
   .header-right {
     float: right;
   }
-  
 
+  .header img{
+    background-color: white;
+    width: 25%;
+    height: 25%;
+  }
+  
   .btn {
-    border: none;
-    background-color: black;
+    text-decoration: none;
+    border-radius: 16px;
+    border: 1px solid black;
     color: white;
+    background-color: black;
     padding: 14px 28px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 26px;
+  }
+
+  .btn:hover{
+    opacity: 0.5;
   }
 
   @media screen and (max-width: 500px) {

@@ -7,10 +7,11 @@ const Header = () => {
    <div class="header">
    <img src={require("../../img/logo.svg")} />
   <div class="header-right">
-    <a href="#">Gorilando</a>
-    <a href="#">Guia Gorila</a>
-    <a href="#">GorilaPRO</a>
-    <button class="btn">Login</button>
+    <a href="/login">Login</a>
+    <a class="btn" href="/cadastro">Cadastro</a>
+  </div>
+  <div>
+    
   </div>
 </div> 
 </div>
