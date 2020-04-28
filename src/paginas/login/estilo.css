@@ -1,12 +1,14 @@
 .login{
     width: 25%;
     height: 25%;
-    border: solid, 2px, black;
-    position: absolute;
-    float: right;
+    padding: 10px;
+    padding-right: 10px;
+    border: solid, 20px, black;
+    float: center;
     background-color: #cccccc;
 }
 
 .login#btn{
+    width: 25%;
     border: 2px, solid, black;
 }
