@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import Rotas from "./Rotas";
-import { Route, Redirect, BrowserRouter, Switch } from "react-router-dom";
+import {
+  Route,
+  Redirect,
+  BrowserRouter,
+  Switch,
+  RouteProps,
+} from "react-router-dom";
 import Header from "./components/header";
 
 import Login from "./paginas/login";

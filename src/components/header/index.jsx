@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import LogoImg from "../../img/logo.svg";
-import { Collapse, Navbar, NavbarToggler, Nav, Button } from "reactstrap";
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  Button,
+  NavItem,
+} from "reactstrap";
+import { Link } from "react-router-dom";
 import { FaWallet, FaChartLine, FaBullseye, FaPowerOff } from "react-icons/fa";
 
 import { Container, RightSide, LeftSide, Logo, Navegar } from "./styles";
@@ -19,13 +27,15 @@ export default function Header() {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              <Navegar to="/carteira">
-                <FaWallet className="mr-md-2" /> Minha Carteira
-              </Navegar>
-              <Navegar to="/metas">
+              <NavItem>
+                <Navegar to="/carteira" tag={Link}>
+                  <FaWallet className="mr-md-2" /> Minha Carteira
+                </Navegar>
+              </NavItem>
+              <Navegar to="/metas" tag={Link}>
                 <FaBullseye className="mr-md-2" /> Metas
               </Navegar>
-              <Navegar to="/consultas">
+              <Navegar to="/consultoria" tag={Link}>
                 <FaChartLine className="mr-md-2" /> Consultorias
               </Navegar>
               <Button outline size="sm" color="danger" onClick={() => {}}>
