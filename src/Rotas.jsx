@@ -7,8 +7,8 @@ import Login from "./paginas/login";
 const Rotas = () => (
   <BrowserRouter>
     <Switch>
-      <Redirect exact path="/" to="/login" />
-      <Route exact path="/login" component={Login} />
+      <Redirect exact path="/" to="/main" />
+      <Route exact path="/main" component={Main} />
     </Switch>
   </BrowserRouter>
 );
