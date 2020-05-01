@@ -37,8 +37,11 @@
 }
 
 .ColInvestidor #cabecalho {
-    height: 100px;
-    align-items: center;
+    height: 50px;
+    margin:10px;
+    text-align: center;
+    font-family: lato;
+    color: #FFFFFF;
     background-color: #46DA96;
     
 }
