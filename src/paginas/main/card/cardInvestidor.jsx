@@ -3,17 +3,18 @@ import React from 'react';
 import "../estilo.css";
 
 
-const cInvestidor= (props) => {
+const cInvestidor= () => {
     return (
       <div>
-        <Card>
-          <CardImg top width="100%" src="../../img/pato.svg"  />
-          <CardBody>
-            <CardTitle>Card title</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
-            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <Button>Button</Button>
+        <Card className="Card">
+          <CardImg src="../img/pato.svg"  className="cImg"/>
+          <CardBody className="CardBody">
+            <a>Thiago Nigri</a>
+            <a>Consultor ha 19 anos</a>
+            <a>Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+            <Button classeName="cBtn">Button</Button>
           </CardBody>
+          
         </Card>
       </div>
     );

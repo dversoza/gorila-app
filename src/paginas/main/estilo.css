@@ -37,27 +37,29 @@
 }
 
 .ColInvestidor #cabecalho {
-    height: 50px;
+    float:center;
+    height: 100px;
     margin:10px;
     text-align: center;
     font-family: lato;
+    font-size: 70px;
     color: #FFFFFF;
     background-color: #46DA96;
     
 }
-
-
 .Card{
+    text-align: justify;
     align-items: center;
-    margin: 20px;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
+    margin: 10px;
+    height: 120px;
     margin:30px;  
 }
-.CardImg{
-    width: 100px;
-    height: 100px;
-    margin: 20px;
+.cBtn{
+    float: center;
 }
+.cImg{
+    width: 50px;
+    height: 200px;
+}
+
 

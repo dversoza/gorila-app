@@ -10,9 +10,11 @@ const main = () => {
       <Container className="main">
 
             <Row className="ColInvestidor">
-                <Col><h1 id="cabecalho">Meu Investidor</h1></Col>
+                <Col><h1 id="cabecalho">Meu Investidor</h1>
+                <Row><Cinvestidor /></Row>
+                </Col>
             </Row>
-         
+            
 
             <Col>
                   <Row className="minha-carteira">carteira</Row>
