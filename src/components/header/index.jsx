@@ -9,7 +9,13 @@ import {
   NavItem,
 } from "reactstrap";
 import { Link } from "react-router-dom";
-import { FaWallet, FaChartLine, FaBullseye, FaPowerOff } from "react-icons/fa";
+import {
+  FaWallet,
+  FaChartLine,
+  FaBullseye,
+  FaPowerOff,
+  FaHome,
+} from "react-icons/fa";
 
 import { Container, RightSide, LeftSide, Logo, Navegar } from "./styles";
 
@@ -27,6 +33,11 @@ export default function Header() {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
+              <NavItem>
+                <Navegar to="/main" tag={Link}>
+                  <FaHome className="mr-md-2" /> Início
+                </Navegar>
+              </NavItem>
               <NavItem>
                 <Navegar to="/carteira" tag={Link}>
                   <FaWallet className="mr-md-2" /> Minha Carteira
