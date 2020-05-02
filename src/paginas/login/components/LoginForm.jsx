@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
 import { Form, Field } from "react-final-form";
 import { FormGroup, Label, Input, Button } from "reactstrap";
 
@@ -35,7 +36,9 @@ export default function LoginForm({ estado }) {
             component={FieldInput}
             validate={required}
           />
-          <Button color="primary">Entrar</Button>
+          <Link to="/main">
+            <Button color="primary">Entrar</Button>
+          </Link>
           <Options>
             <Button className="text-left" color="link">
               Esqueci minha senha

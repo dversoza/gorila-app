@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-import LogoImg from "../../img/logo.svg";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  Button,
-  NavItem,
-} from "reactstrap";
 import { Link } from "react-router-dom";
+import LogoImg from "../../img/logo.svg";
+import { Collapse, Navbar, NavbarToggler, Nav, Button } from "reactstrap";
 import {
   FaWallet,
   FaChartLine,
-  FaBullseye,
+  FaUser,
   FaPowerOff,
   FaHome,
 } from "react-icons/fa";
@@ -33,25 +26,23 @@ export default function Header() {
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar>
-              <NavItem>
-                <Navegar to="/main" tag={Link}>
-                  <FaHome className="mr-md-2" /> Início
-                </Navegar>
-              </NavItem>
-              <NavItem>
-                <Navegar to="/carteira" tag={Link}>
-                  <FaWallet className="mr-md-2" /> Minha Carteira
-                </Navegar>
-              </NavItem>
-              <Navegar to="/metas" tag={Link}>
-                <FaBullseye className="mr-md-2" /> Metas
+              <Navegar to="/main" tag={Link}>
+                <FaHome className="mr-md-2" /> Início
+              </Navegar>
+              <Navegar to="/perfil" tag={Link}>
+                <FaUser className="mr-md-2" /> Perfil
+              </Navegar>
+              <Navegar to="/carteira" tag={Link}>
+                <FaWallet className="mr-md-2" /> Minha Carteira
               </Navegar>
               <Navegar to="/consultoria" tag={Link}>
                 <FaChartLine className="mr-md-2" /> Consultorias
               </Navegar>
-              <Button outline size="sm" color="danger" onClick={() => {}}>
-                <FaPowerOff /> Sair
-              </Button>
+              <Link to="/login">
+                <Button outline size="sm" color="danger">
+                  <FaPowerOff /> Sair
+                </Button>
+              </Link>
             </Nav>
           </Collapse>
         </Navbar>
