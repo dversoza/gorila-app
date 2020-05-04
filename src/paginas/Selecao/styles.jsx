@@ -32,9 +32,45 @@ export const ProfileContainer = styled.div`
   }
 `;
 export const TitleHistorico = styled.div`
+  margin-top: 15px;
   padding: 10px 0;
-  background: #ec7878;
+  background: #e1e1e1;
   color: #ffffff;
   font-size: 19px;
-  text-align: center;
+  span {
+    padding: 10px 25px;
+    background: #ec7878;
+  }
+`;
+export const ContainerHistorico = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  margin-top: 5px;
+  padding: 15px;
+`;
+export const TitleCurriculo = styled.div`
+  margin-top: 15px;
+  padding: 10px 0;
+  background: #e1e1e1;
+  color: #ffffff;
+  font-size: 19px;
+  span {
+    padding: 10px 25px;
+    background: #a483fa;
+  }
+`;
+export const ContainerCurriculo = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f1f1f1;
+  margin-top: 5px;
+  padding: 15px;
+`;
+export const ContainerEscolha = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;

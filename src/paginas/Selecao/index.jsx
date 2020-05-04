@@ -1,6 +1,7 @@
 import React from "react";
 import Perfil from "../../img/daniel.png";
-import { Row, Col, Card, CardBody } from "reactstrap";
+import { Row, Col, Card, CardBody, Button } from "reactstrap";
+import { FaTimesCircle, FaHeart } from "react-icons/fa";
 
 import {
   Container,
@@ -9,6 +10,10 @@ import {
   ProfileContainer,
   About,
   TitleHistorico,
+  ContainerHistorico,
+  TitleCurriculo,
+  ContainerCurriculo,
+  ContainerEscolha,
 } from "./styles";
 
 export default function Selecao() {
@@ -48,7 +53,57 @@ export default function Selecao() {
                 </CardBody>
               </Col>
               <Col md={6}>
-                <TitleHistorico>HISTÓRICO</TitleHistorico>
+                <TitleHistorico>
+                  <span>Histórico</span>
+                </TitleHistorico>
+
+                <CardBody>
+                  <ContainerHistorico>
+                    <div>
+                      <h5>Casa de análise SENO</h5>
+                      Jan. 2017 a Jun 2017
+                    </div>
+                    Coodenador do setor de recomendações imobiliárias
+                  </ContainerHistorico>
+                  <ContainerHistorico>
+                    <div>
+                      <h5>Consultora Clarifica</h5>
+                      Set. 2017 a Dez 2019
+                    </div>
+                    Atendia mais de 70 clientes
+                  </ContainerHistorico>
+                </CardBody>
+                <TitleCurriculo>
+                  <span>Currículo</span>
+                </TitleCurriculo>
+                <CardBody>
+                  <ContainerCurriculo>
+                    <div>
+                      <h5>Economia - USP</h5>
+                    </div>
+                    Jan. 2007 a Jun 2011
+                  </ContainerCurriculo>
+                  <ContainerCurriculo>
+                    <div>
+                      <h5>MBA - Finanças aplicadas</h5>
+                    </div>
+                    Ago. 2012 a Jun 2013
+                  </ContainerCurriculo>
+                </CardBody>
+                <CardBody>
+                  <Row>
+                    <Col md={6}>
+                      <Button outline block color="danger">
+                        <FaTimesCircle size="50px" />
+                      </Button>
+                    </Col>
+                    <Col md={6}>
+                      <Button outline block color="success">
+                        <FaHeart size="50px" />
+                      </Button>
+                    </Col>
+                  </Row>
+                </CardBody>
               </Col>
             </Row>
           </Card>
