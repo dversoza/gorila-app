@@ -5,6 +5,7 @@ import Main from "./paginas/main";
 import Perfil from "./paginas/perfil";
 import Consultoria from "./paginas/consultoria";
 import Carteira from "./paginas/carteira";
+import Selecao from "./paginas/Selecao";
 
 const Rotas = () => (
   <Switch>
@@ -13,6 +14,7 @@ const Rotas = () => (
     <Route path="/carteira" component={Carteira} />
     <Route path="/perfil" component={Perfil} />
     <Route path="/consultoria" component={Consultoria} />
+    <Route path="/selecao" component={Selecao} />
     <Redirect from="*" to="/404" />
   </Switch>
 );
