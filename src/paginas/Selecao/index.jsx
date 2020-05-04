@@ -13,13 +13,13 @@ import {
   ContainerHistorico,
   TitleCurriculo,
   ContainerCurriculo,
-  ContainerEscolha,
+  ContCard,
 } from "./styles";
 
 export default function Selecao() {
   return (
     <Container>
-      <Row form>
+      <Row>
         <Col md={8}>
           <Card>
             <Row>
@@ -110,7 +110,23 @@ export default function Selecao() {
         </Col>
         <Col md={4}>
           <Card>
-            <CardBody>dhjgasdh</CardBody>
+            <TitleConsoltor className="text-center">
+              RENTABILIDADES ANTERIORES
+            </TitleConsoltor>
+            <CardBody>
+              <ContCard>
+                <h1>Carteira agressiva</h1>
+                <p>34% de rentabilidade anual</p>
+              </ContCard>
+              <ContCard>
+                <h1>Carteira Conservadora</h1>
+                <p>19% de rentabilidade anual</p>
+              </ContCard>
+              <ContCard>
+                <h1>Carteira de Imóveis</h1>
+                <p>24% de rentabilidade anual</p>
+              </ContCard>
+            </CardBody>
           </Card>
         </Col>
       </Row>

@@ -69,8 +69,12 @@ export const ContainerCurriculo = styled.div`
   margin-top: 5px;
   padding: 15px;
 `;
-export const ContainerEscolha = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+export const ContCard = styled.div`
+  border: solid 1px #19308a;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  h1 {
+    font-size: 25px;
+  }
 `;
