@@ -1,5 +1,5 @@
 import Photo from "../../../img/img_avatar.png";
-import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Card, CardBody, CardTitle, Button } from "reactstrap";
 import React from "react";
 
