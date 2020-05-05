@@ -1,10 +1,11 @@
 import Photo from "../../../img/img_avatar.png";
+import { Redirect } from "react-router-dom";
 import { Card, CardBody, CardTitle, Button } from "reactstrap";
 import React from "react";
 
 import { TitleConsoltor, Center, ConsultorImg, Description } from "../styles";
 
-export default function SemConsultor() {
+export default function SemConsultor({ setConsultor }) {
   return (
     <Card>
       <CardBody>
@@ -23,9 +24,11 @@ export default function SemConsultor() {
         </Description>
       </CardBody>
       <CardBody>
-        <Button block color="info">
-          PROCURAR CONSULTOR
-        </Button>
+        <Link to="/selecao">
+          <Button block color="info" onClick={() => setConsultor(true)}>
+            PROCURAR CONSULTOR
+          </Button>
+        </Link>
       </CardBody>
     </Card>
   );

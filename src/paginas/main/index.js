@@ -10,7 +10,13 @@ export default function Main() {
   return (
     <Container>
       <Row>
-        <Col md={4}>{consultor ? <Cinvestidor /> : <SemConsultor />}</Col>
+        <Col md={4}>
+          {consultor ? (
+            <Cinvestidor />
+          ) : (
+            <SemConsultor setConsultor={setConsultor} />
+          )}
+        </Col>
         <Col md={8}>
           <Carteira />
         </Col>

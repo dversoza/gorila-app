@@ -1,5 +1,6 @@
 import React from "react";
 import Perfil from "../../img/daniel.png";
+import { Link } from "react-router-dom";
 import { Row, Col, Card, CardBody, Button } from "reactstrap";
 import { FaTimesCircle, FaHeart } from "react-icons/fa";
 
@@ -98,9 +99,11 @@ export default function Selecao() {
                       </Button>
                     </Col>
                     <Col md={6}>
-                      <Button outline block color="success">
-                        <FaHeart size="50px" />
-                      </Button>
+                      <Link to="/main">
+                        <Button outline block color="success">
+                          <FaHeart size="50px" />
+                        </Button>
+                      </Link>
                     </Col>
                   </Row>
                 </CardBody>
