@@ -99,7 +99,7 @@ export default function Selecao() {
                       </Button>
                     </Col>
                     <Col md={6}>
-                      <Link to="/main">
+                      <Link to="/main2">
                         <Button outline block color="success">
                           <FaHeart size="50px" />
                         </Button>
