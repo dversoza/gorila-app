@@ -31,6 +31,7 @@ export default function LoginForm({ estado }) {
             validate={required}
           />
           <Field
+            type="password"
             name="senha"
             label="Senha"
             component={FieldInput}
