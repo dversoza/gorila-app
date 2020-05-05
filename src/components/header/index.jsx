@@ -32,12 +32,12 @@ export default function Header() {
               <Navegar to="/perfil" tag={Link}>
                 <FaUser className="mr-md-2" /> Perfil
               </Navegar>
-              <Navegar to="/carteira" tag={Link}>
+              {/* <Navegar to="/carteira" tag={Link}>
                 <FaWallet className="mr-md-2" /> Minha Carteira
               </Navegar>
               <Navegar to="/consultoria" tag={Link}>
                 <FaChartLine className="mr-md-2" /> Consultorias
-              </Navegar>
+              </Navegar> */}
               <Link to="/login">
                 <Button outline size="sm" color="danger">
                   <FaPowerOff /> Sair
